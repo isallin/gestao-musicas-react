@@ -1,0 +1,211 @@
+.pageheader {
+    margin-bottom: 30px;
+}
+
+.pageheader h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.pageheader p {
+    color: #777;
+    font-size: 15px;
+}
+
+.formcard,
+.musiccard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.sectionheader {
+    margin-bottom: 25px;
+}
+
+.sectionheader h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.sectionheader p {
+    color: #888;
+    font-size: 14px;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.formgroup label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+.formgroup input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 7px;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.formgroup input:focus {
+    border-color: #555;
+}
+
+.btncadastrar {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 7px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btncadastrar:hover {
+    background-color: #444;
+}
+
+.filterarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filterselect {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 7px;
+    padding: 0 10px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.filterinput {
+    flex: 1;
+    height: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 7px;
+    padding: 0 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+.filterinput:focus,
+.filterselect:focus {
+    border-color: #555;
+}
+
+.musiclist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.musicitem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 9px;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+
+.musicitem:hover {
+    background-color: #fafafa;
+    border-color: #ddd;
+}
+
+.musicimage {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 7px;
+    flex-shrink: 0;
+}
+
+.musicinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.musicinfo h3 {
+    font-size: 15px;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.artist {
+    font-size: 13px;
+    color: #555;
+}
+
+
+.album {
+    font-size: 12px;
+    color: #999;
+}
+
+.duration {
+    font-size: 13px;
+    color: #777;
+    min-width: 45px;
+    text-align: center;
+}
+
+.btndelete {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #d33;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btndelete:hover {
+    background-color: #ffe9e9;
+}
+
+.musiclist::-webkit-scrollbar {
+    width: 6px;
+}
+
+.musiclist::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.musiclist::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 10px;
+}
