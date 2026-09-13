@@ -24,3 +24,26 @@ body {
     gap: 25px;
     align-items: start;
 }
+
+.formcard,
+.musiccard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.sectionheader {
+    margin-bottom: 25px;
+}
+
+.sectionheader h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.sectionheader p {
+    color: #888;
+    font-size: 14px;
+}

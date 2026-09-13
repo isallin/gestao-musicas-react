@@ -1,9 +1,6 @@
-import { useState } from "react";
 import styles from "./style.module.css"
 
-export function Cadastro() {
-    const[musicas, setMusicas] = useState([])
-
+export function Cadastro({ musicas, setMusicas }) {
     function CamposTexto(props) {
         return (
             <div className={styles.formgroup}>
@@ -32,24 +29,25 @@ export function Cadastro() {
 
         const form = event.currentTarget
         const formData = new FormData(form)
-        
+
         const duracao = Number(formData.get("duracao"));
-        if(duracao <= 0) {
+        if (duracao <= 0) {
             alert("A duração deve ser um número positivo")
             return
         }
 
         const musica = {
-            id:crypto.randomUUID(),
+            id: crypto.randomUUID(),
             nome: formData.get("nome"),
             artista: formData.get("artista"),
             album: formData.get("album"),
-            duracao: duracao
+            duracao: formData.get("duracao")
         }
 
-        setMusicas([...musicas, musica])
-        form.reset()
+        setMusicas([...musicas, musica]);
         alert("Música cadastrada com sucesso.")
+        console.log(musicas)
+        form.reset()
     }
 
     return (
